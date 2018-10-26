@@ -1,0 +1,20 @@
+{
+  "name": "Open in Colab",
+  "description": "Open a Github-hosted notebook in Google Colab",
+  "version": "1.0",
+  "version_name": "1.0.$CL$",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon16.png",
+    "default_title": "Open notebook in Google Colab"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "permissions": ["activeTab"]
+}
