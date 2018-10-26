@@ -2,7 +2,7 @@
   "name": "Open in Colab",
   "description": "Open a Github-hosted notebook in Google Colab",
   "version": "1.0",
-  "version_name": "1.0.$CL$",
+  "version_name": "1.0",
   "manifest_version": 2,
   "icons": {
     "16": "images/icon16.png",
