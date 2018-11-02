@@ -6,7 +6,8 @@ notebook on github, will open that notebook in
 
 ## Installing the Extension
 
-*Coming Soon:* we will make this extension available for installation from the Chrome Web Store soon.
+The latest release of the extension can be installed from the
+[Chrome Web Store](https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo).
 
 ## Development Install
 
