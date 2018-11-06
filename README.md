@@ -4,6 +4,10 @@ This is a simple chrome extension that, when clicked when viewing a Jupyter
 notebook on github, will open that notebook in
 [Google Colab](http://colab.research.google.com/).
 
+The extension simply provides a URL redirect: it reads the current URL and opens
+a new tab at http://colab.research.google.com/github/ with the user, repository,
+and notebook path.
+
 ## Installing the Extension
 
 The latest release of the extension can be installed from the
