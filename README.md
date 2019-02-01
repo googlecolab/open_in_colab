@@ -25,4 +25,4 @@ To install the extension directly from source:
    in your browser bar.
 5. Navigate to a notebook on github
    (e.g. https://github.com/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb),
-   and click the extension icon to open it in Colab.
+   and click the extension icon to open the notebook in Colab.
