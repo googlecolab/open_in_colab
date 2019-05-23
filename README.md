@@ -17,12 +17,12 @@ The latest release of the extension can be installed from the
 
 To install the extension directly from source:
 
-1. Clone this repository to your local disk.
-2. Open the Chrome browser, and navigate to chrome://extensions.
-3. Ensure that developer mode is enabled (see the switch in the upper-right).
-4. Click "Load Unpacked" and choose the location of the `open_in_colab` repository.
-   You should see a little colab icon appear in your Chrome extensions icons
-   in your browser bar.
-5. Navigate to a notebook on github
-   (e.g. https://github.com/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb),
-   and click the extension icon to open the notebook in Colab.
+1.  Clone this repository to your local disk.
+2.  Open the Chrome browser, and navigate to chrome://extensions.
+3.  Ensure that developer mode is enabled (see the switch in the upper-right).
+4.  Click "Load Unpacked" and choose the location of the `open_in_colab`
+    repository. You should see a little colab icon appear in your Chrome
+    extensions icons in your browser bar.
+5.  Navigate to a notebook on github (e.g.
+    https://github.com/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb),
+    and click the extension icon to open the notebook in Colab.
