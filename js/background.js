@@ -20,19 +20,20 @@
 // or on gist.github.com, this function will open a new tab and load
 // the notebook into Colab.
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.action.onClicked.addListener(function(tab) {
   const colab_url = 'https://colab.research.google.com/';
   const github = /^https?:\/\/github\.com\/(.+)\/(.*\.ipynb)$/;
   const gist =
       /^https?:\/\/gist\.github\.com\/(.+)\/([a-f0-9]+(?:\#file\-.*\-ipynb)?)$/;
 
-  let path, url = null;
+  let path = null;
+  let url = null;
 
   if (github.test(tab.url)) {
     path = github.exec(tab.url);
     url = colab_url + ['github', path[1], path[2]].join('/');
   } else if (gist.test(tab.url)) {
-    path = gist.exec(page.url);
+    path = gist.exec(tab.url);
     url = colab_url + ['gist', path[1], path[2]].join('/');
   }
 
