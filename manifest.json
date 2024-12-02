@@ -18,7 +18,7 @@
     "default_title": "Open notebook in Google Colab"
   },
   "background": {
-    "service_worker": "js/background.js"
+    "service_worker": "service_worker_compiled.js"
   },
   "permissions": ["activeTab"]
 }
