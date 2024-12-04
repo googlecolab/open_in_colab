@@ -40,6 +40,7 @@ chrome.action.onClicked.addListener(function(tab) {
   if (url) {
     chrome.tabs.create({'url': url});
   } else {
-    alert('Current page is not recognized as a github-hosted notebook');
+    console.warn(`Current page (${
+        tab.url}) is not recognized as a GitHub-hosted notebook.`);
   }
 });
