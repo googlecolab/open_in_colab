@@ -15,36 +15,23 @@
  * limitations under the License.
  */
 
+import {githubToColabUrl} from './parse';
+
 // This listener is called when the user clicks the extension icon.
-
-// If the current URL matches a Jupyter notebook hosted on github.com
-// or on gist.github.com, this function will open a new tab and load
-// the notebook into Colab.
-
+//
+// If the current URL matches a Jupyter notebook hosted on github.com or on
+// gist.github.com, this function will open a new tab and load the notebook into
+// Colab.
 chrome.action.onClicked.addListener((tab: chrome.tabs.Tab) => {
-  const colab_url = 'https://colab.research.google.com/';
-  const github = /^https?:\/\/github\.com\/(.+)\/(.*\.ipynb)$/;
-  const gist =
-      /^https?:\/\/gist\.github\.com\/(.+)\/([a-f0-9]+(?:\#file\-.*\-ipynb)?)$/;
-
   if (!tab.url) {
     console.warn('Open in Colab was invoked without a URL.');
     return;
   }
-
-  let url = null;
-
-  const githubPath = github.exec(tab.url);
-  const gistPath = gist.exec(tab.url);
-  if (githubPath) {
-    url = colab_url + ['github', githubPath[1], githubPath[2]].join('/');
-  } else if (gistPath) {
-    url = colab_url + ['gist', gistPath[1], gistPath[2]].join('/');
+  const colabUrl = githubToColabUrl(tab.url);
+  if (!colabUrl) {
+    console.warn(`Current page (${
+        tab.url}) is not recognized as a GitHub-hosted notebook.`);
+    return;
   }
-
-  if (url) {
-    chrome.tabs.create({'url': url});
-  } else {
-    console.warn(`Current page (${tab.url}) is not recognized as a GitHub-hosted notebook.`);
-  }
+  chrome.tabs.create({'url': colabUrl});
 });
