@@ -3,6 +3,10 @@
   "description": "Open a Github-hosted notebook in Google Colab",
   "version": "1.1.0",
   "version_name": "1.1.0",
+  "author": {
+    "email": "colab-team@google.com"
+  },
+  "homepage_url": "https://github.com/googlecolab/open_in_colab/",
   "manifest_version": 3,
   "icons": {
     "16": "images/icon16.png",
