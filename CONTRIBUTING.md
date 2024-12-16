@@ -1,9 +1,8 @@
 # Open in Colab Chrome Extension
 
 This is a Chrome extension that allows notebooks on GitHub to be opened in
-[Google Colaboratory](https://colab.research.google.com) in one click. See the
-Colaboratory [FAQ](https://research.google.com/colaboratory/faq.html) for
-details.
+[Google Colab](https://colab.research.google.com) in one click. See the
+[Colab FAQ](https://research.google.com/colaboratory/faq.html) for details.
 
 ## Contributing
 

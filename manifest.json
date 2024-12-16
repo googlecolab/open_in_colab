@@ -1,8 +1,7 @@
 {
   "name": "Open in Colab",
   "description": "Open a Github-hosted notebook in Google Colab",
-  "version": "1.1.0",
-  "version_name": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "email": "colab-team@google.com"
   },

@@ -32,6 +32,13 @@ or to report a new one, see
 
 ## Change Log
 
+Version 1.2.0 (2024-12-16):
+
+*   Add a link to Open in Colab's GitHub repo from the Chrome Web Store page.
+    Fixes #3.
+*   Show a helpful popup when the extension icon is clicked on an unsupported
+    page. Fixes #1.
+
 Version 1.1.0 (2023-12-07):
 
 *   Fix Gist URL handling.
