@@ -32,6 +32,11 @@ or to report a new one, see
 
 ## Change Log
 
+Version 1.2.1 (2025-11-11):
+
+*   Support opening .ipynb files in Colab from the "Code" view for repository
+    files or the "source blob" view for Gists.
+
 Version 1.2.0 (2024-12-16):
 
 *   Add a link to Open in Colab's GitHub repo from the Chrome Web Store page.

@@ -15,9 +15,9 @@
  */
 
 const COLAB_BASE_URL = 'https://colab.research.google.com/';
-const GITHUB_REPO_RE = /^https?:\/\/github\.com\/(.+)\/(.*\.ipynb)$/;
+const GITHUB_REPO_RE = /^https?:\/\/github\.com\/(.+)\/(.*\.ipynb)(\?.+)?$/;
 const GITHUB_GIST_RE =
-    /^https?:\/\/gist\.github\.com\/(.+)\/([a-f0-9]+(?:\#file\-.*\-ipynb)?)$/;
+    /^https?:\/\/gist\.github\.com\/(.+)\/([a-f0-9]+(?:\#file\-.*\-ipynb)?)(\?.+)?$/;
 
 /**
  * Attempt to convert a GitHub notebook URL to a Colab URL.
